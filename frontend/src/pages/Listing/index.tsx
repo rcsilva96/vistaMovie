@@ -1,9 +1,10 @@
 import React from "react";
+import Pagination from "../../components/Pagination/index.tsx";
 
 function Listing(){
 
     return(
-        <h1>Listagem funcionou</h1>
+        <Pagination />
     )
 }
 
