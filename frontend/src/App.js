@@ -1,8 +1,10 @@
 import './index.css';
+import Navbar from './components/Navbar/index.tsx';
+
 
 function App() {
   return (
-    <h1>movieVista funcionou!</h1>
+    <Navbar></Navbar>
   );
 }
 
