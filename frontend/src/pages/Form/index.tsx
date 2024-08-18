@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 function Form() {
   const movie = {
@@ -36,7 +37,9 @@ function Form() {
             </button>
           </div>
         </form>
-        <button className="btn btn-primary vistamovie-btn mt-3">Cancelar</button>
+        <Link to="/">
+          <button className="btn btn-primary vistamovie-btn mt-3">Cancelar</button>
+        </Link>
       </div>
     </div>
   );
