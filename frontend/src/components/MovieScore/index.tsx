@@ -1,18 +1,20 @@
 import React from "react";
 import "./styles.css";
-import MovieStars from "../MovieStars";
+import MovieStars from "../MovieStars/index.tsx";
 
-function MovieScore() {
+type Props ={
+  score: number;
+  count: number;
+}
 
-    const score = 3.5;
-    const count = 888;
+function MovieScore( {score, count } : Props ) {
 
   return (
     <div className="vistamovie-score-container">
       <p className="vistamovie-score-value">
         {score > 0 ? score.toFixed(1) : "-"}
       </p>
-      <MovieStars />
+      <MovieStars score={score}/>
       <p className="vistamovie-score-count">{count} avaliações</p>
     </div>
   );
