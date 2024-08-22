@@ -24,4 +24,4 @@ COPY --from=build /app/target/vistamovie-0.0.1-SNAPSHOT.jar /app/vistamovie.jar
 EXPOSE 8080
 
 # Comando para rodar a aplicação
-ENTRYPOINT ["java", "-jar", "dsmovie.jar"]
+ENTRYPOINT ["java", "-jar", "vistamovie.jar"]
