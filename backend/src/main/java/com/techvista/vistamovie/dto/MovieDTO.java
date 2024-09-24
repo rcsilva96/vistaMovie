@@ -1,5 +1,6 @@
 package com.techvista.vistamovie.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.techvista.vistamovie.entities.Movie;
 
 public class MovieDTO {
@@ -7,6 +8,7 @@ public class MovieDTO {
     private Long id;
     private String title;
     private Double score;
+    @JsonIgnore // Ignora o que estiver abaixo dele
     private Integer count;
     private String image;
 
